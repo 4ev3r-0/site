@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Pages Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>jay4ev3r.org Test</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        code {
+            background: #eee;
+            padding: 2px 6px;
+        }
+    </style>
 </head>
 <body>
-    <h1>GitHub Pages Test</h1>
+    <h1>GitHub Pages is working</h1>
 
-    <p>If you can read this, GitHub Pages is serving the latest deployment.</p>
+    <p>If you can see this page, the deployment succeeded.</p>
 
-    <p>Timestamp: 2026-06-19 test deployment</p>
+    <p>Host: <code id="host"></code></p>
 
-    <p>Domain:
-        <script>
-            document.write(window.location.hostname);
-        </script>
-    </p>
+    <p>Path: <code id="path"></code></p>
+
+    <p>Timestamp: 2026-06-19 test</p>
+
+    <script>
+        document.getElementById('host').textContent = location.hostname;
+        document.getElementById('path').textContent = location.pathname;
+    </script>
 </body>
 </html>
